@@ -4,7 +4,7 @@
   $fname=$_POST["fname"];
   $lname=$_POST["lname"];
   $mail=$_POST["email"];
-  $psswd=$_POST["psswd"];
+  $psswd=password_hash($_POST["psswd"],PASSWORD_BCRYPT);
   //echo $id.$fname.$lname.$mail;
   $result=mysqli_query($conn,"SELECT * FROM users WHERE email='$mail'") or die(mysqli_error($conn));
   $row_count=mysqli_num_rows($result);
