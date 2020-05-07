@@ -14,6 +14,12 @@
   else {
     //echo '$fname';
     mysqli_query($conn,"INSERT INTO users (`st_id`,`fname`,`lname`,`email`,`password`) VALUES ('$id','$fname','$lname','$mail','$psswd');") or die(mysqli_error($conn));
-    header('Location:index.php');
+    echo "<script>
+      var r=confirm('Successfully Registered');
+      if(r) {
+        window.location.href='index.php';
+      }
+    </script>";
   }
+$conn.close();
 ?>
