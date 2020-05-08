@@ -9,7 +9,12 @@
   if($row['st_id']==$a && password_verify($b,$row['password'])) { //check here
     $_SESSION['st_id']=$a;
     $_SESSION['fname']=$row['fname'];
-    header('Location:home.php');
+    echo "<script>
+      var r=confirm('Login Successful');
+      if(r) {
+        window.location.href='home.php';
+      }
+    </script>";
   }
   else {
     echo "<script>
