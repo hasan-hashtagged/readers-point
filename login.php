@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  if(isset($_SESSION['st_id'])) {
+    header("Location:home.php");
+    exit;
+  }
+?>
 <html>
   <head>
     <title>Login Page</title>

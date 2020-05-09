@@ -1,6 +1,9 @@
 <?php
-  //Add login validation here
   session_start();
+  if(!isset($_SESSION['st_id'])) {
+    header("Location:index.php");
+    exit;
+  }
   require 'dbconnect.php';
   $a=$_SESSION['st_id'];
   $result=mysqli_query($conn,"SELECT * FROM book WHERE Is_lent='0' AND o_id<>'$a';") or die(mysqli_error($conn));
