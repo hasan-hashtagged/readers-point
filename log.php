@@ -9,6 +9,7 @@
   if($row['st_id']==$a && password_verify($b,$row['password'])) { //check here
     $_SESSION['st_id']=$a;
     $_SESSION['fname']=$row['fname'];
+    $_SESSION['email']=$row['email'];
     echo "<script>
       var r=confirm('Login Successful');
       if(r) {

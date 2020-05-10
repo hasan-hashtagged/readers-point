@@ -31,8 +31,16 @@
             while($row=mysqli_fetch_array($result)) {
         ?>
         <tr>
-          <td><?php echo $row['name']; ?></td>
-          <td><button name="button1">Request</button></td>
+          <td>
+            <?php echo $row['name'];?>
+          </td>
+          <td>
+            <form action="request.php" method="post">
+              <input type="hidden" name="oid" value="<?php echo $row['o_id']; ?>"/>
+              <input type="hidden" name="bname" value="<?php echo $row['name']; ?>"/>
+              <input type="submit" name="subm" value="Request"/>
+            </form>
+          </td>
         </tr>
       <?php }
       } ?>
