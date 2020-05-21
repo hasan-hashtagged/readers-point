@@ -35,3 +35,10 @@ li a {
 table {
   border-spacing: 10px;
 }
+#sub {
+  background-color: rgba(0,0,0,.5);
+  padding: 5px;
+  color: #fff;
+  font-size: 14pt;
+  border-radius: 2px 15px;
+}
