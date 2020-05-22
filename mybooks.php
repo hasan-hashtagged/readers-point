@@ -9,10 +9,11 @@
 <html>
   <head>
     <title>MY BOOKS</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
     <div>
-      <table>
+      <table class="container" align="center">
         <?php
           if($result>0) {
             while($row=mysqli_fetch_array($result)) {
@@ -21,7 +22,7 @@
             <td><?php echo $row['name']; ?></td>
             <?php
               if(!$row['Is_lent']) {?>
-            <td><button onclick="test()" name="btn1" value="submit">lend</button><form action="give.php" method="post"><input type="hidden" name="bname" value="<?php echo $row['name'];?>"/><span id="lend"></span></form></td>
+            <td><button onclick="test()" name="btn1" id="sub" value="submit">lend</button><form action="give.php" method="post"><input type="hidden" name="bname" value="<?php echo $row['name'];?>"/><span id="lend"></span></form></td>
           <?php } ?>
         </tr>
         <script>

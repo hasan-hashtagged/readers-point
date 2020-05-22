@@ -1,0 +1,44 @@
+body {
+  background-image: url('back');
+}
+.topbar {
+  background-color: rgba(0,51,43,.8);
+  color: #fff;
+  font-size: 20pt;
+  text-align: center;
+  margin: -25px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: -25px;
+}
+li {
+  float:left;
+}
+
+li a {
+  display: block;
+  background-color: rgba(0,51,43,0);
+  text-decoration: none;
+  color:#ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 15pt;
+}
+.container {
+  text-align: center;
+  color: rgb(0,52,43);
+  font-size: 18pt;
+  font-weight: bold;
+}
+table {
+  border-spacing: 10px;
+}
+#sub {
+  background-color: rgba(0,0,0,.5);
+  padding: 5px;
+  color: #fff;
+  font-size: 14pt;
+  border-radius: 2px 15px;
+}
