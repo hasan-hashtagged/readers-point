@@ -1,6 +1,10 @@
 <?php
   require 'dbconnect.php';
   session_start();
+  if(!isset($_SESSION['st_id'])) {
+    header('Location:login.php');
+    exit;
+  }
   $a=$_SESSION['st_id'];
   //echo $a;
   $result=mysqli_query($conn,"SELECT * FROM book WHERE o_id='$a';") or die(mysqli_error($conn));
