@@ -35,5 +35,17 @@
       }?>
         </table>
       </div>
+      <div class="metainfo">
+        <h2> Contact Us: </h2>
+        <address>
+          Email: info@example.com<br/><br/>
+          Call Us: +91 0987654321<br/><br/>
+          Our Offices: Bangalore<br/><br/>
+        </address>
+        <h2>About Us:</h2>
+        <p text-decoration="italics">We at Young App Solution work for Web development. Our works include, but not limited to, Web App development, Website development and Android App development.
+          We have collaborated with various enterprises in these development. For any queries, Please contact us.
+        </p>
+      </div>
   </body>
 </html>

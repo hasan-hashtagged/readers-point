@@ -26,14 +26,14 @@
             <td><?php echo $row['name']; ?></td>
             <?php
               if(!$row['Is_lent']) {?>
-            <td><button onclick="test()" name="btn1" id="sub" value="submit">lend</button><form action="give.php" method="post"><input type="hidden" name="bname" value="<?php echo $row['name'];?>"/><span id="lend"></span></form></td>
+            <td>
+              <form action="confirmlend.php" method="post">
+                <input type="hidden" name="bname" value="<?php echo $row['name'];?>"/>
+                <button name="btn1" id="sub" value="submit">lend</button>
+              </form>
+            </td>
           <?php } ?>
         </tr>
-        <script>
-        function test() {
-          document.getElementById('lend').innerHTML='<input type="text" name="s_id"/><input type="submit" value="Give"/>';
-        }
-        </script>
         <?php
       }
     } ?>

@@ -9,6 +9,15 @@ body {
   margin: -25px;
 }
 
+.metainfo {
+  position: absolute; 
+  padding: 10px;
+  background-color: rgba(0,51,43,.8);
+  font-size: 12pt;
+  color: white;
+  font-weight: bold;
+}
+
 ul {
   list-style-type: none;
   margin-left: -25px;
@@ -25,6 +34,9 @@ li a {
   text-align: center;
   padding: 10px;
   font-size: 15pt;
+}
+a:hover {
+  background-color: rgb(155,25,55);
 }
 .container {
   text-align: center;
